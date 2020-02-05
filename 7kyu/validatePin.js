@@ -4,7 +4,7 @@
 
 const validatePin = string => {
   const regex = /^[0-9]{4}$|^[0-9]{6}$/gm;
-  return string.match(regex) != null;
+  return regex.test(string);
 };
 
 module.exports = validatePin;
