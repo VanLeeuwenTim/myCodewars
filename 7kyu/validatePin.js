@@ -3,7 +3,7 @@
 // If the function is passed a valid PIN string, return true, else return false.
 
 const validatePin = string => {
-  const regex = /^[0-9]{4}$|^[0-9]{6}$/gm;
+  const regex = /^[0-9]{4}$|^[0-9]{6}$/g;
   return regex.test(string);
 };
 
